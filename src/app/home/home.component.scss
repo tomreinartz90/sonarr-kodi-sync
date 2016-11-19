@@ -1,0 +1,9 @@
+// component styles are encapsulated and only applied to their components
+* {
+  color: #FFFFFF;
+
+  li {
+    text-align: left;
+    list-style: none;
+  }
+}

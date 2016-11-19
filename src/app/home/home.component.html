@@ -1,0 +1,10 @@
+<button [hidden]="kodiSeries.length == 0 || sonarrSeries.length == 0" (click)="startSonarrSync()">Start sync process</button>
+<h3 [hidden]="kodiSeries.length != 0 && sonarrSeries.length != 0">
+  {{apiStatus}}
+</h3>
+<ul>
+  <li *ngFor="let serie of sonarrSeries">
+    {{serie.title}} <small>{{serie.status}}</small>
+  </li>
+</ul>
+
